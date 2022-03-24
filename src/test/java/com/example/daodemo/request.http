@@ -1,1 +1,1 @@
-GET http://localhost:8080/products/fetch-product?name=Ivan
+GET http://localhost:8080/products/fetch-product?name=Alexey

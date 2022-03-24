@@ -33,3 +33,12 @@ values (5, 'apple', 100);
 
 insert into orders (customer_id, product_name, amount)
 values (6, 'bread', 200);
+
+insert into orders (customer_id, product_name, amount)
+values (6, 'meat', 200);
+
+insert into orders (customer_id, product_name, amount)
+values (6, 'orange', 55);
+
+insert into orders (customer_id, product_name, amount)
+values (6, 'pie', 160);

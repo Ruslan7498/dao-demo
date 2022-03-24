@@ -6,13 +6,19 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
+
 @RestController
 public class DemoController {
+    private final DemoService service;
+
     @Autowired
-    private DemoService service;
+    public DemoController(DemoService service) {
+        this.service = service;
+    }
 
     @GetMapping("/products/fetch-product")
-    public String getProductName(@RequestParam(required = false) String name) {
+    public List<String> getProductName(@RequestParam(required = false) String name) {
         return service.getProductName(name);
     }
 }
